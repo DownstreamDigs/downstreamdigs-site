@@ -3,48 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Downstream Digs — Guided Fossil Hunts in Florida</title>
-<meta name="description" content="Private guided fossil hunting trips on Florida's Peace River — real shark teeth, bone, and prehistoric relics.">
+<title>Fossils of the Peace River — What You'll Find | Downstream Digs</title>
+<meta name="description" content="A field guide to the fossils found in Florida's Peace River — megalodon and shark teeth, Ice Age megafauna, marine fossils, and the geology and permits behind them.">
 <meta name="robots" content="index, follow">
-<meta name="keywords" content="fossil hunting Florida, Peace River fossil hunting, guided fossil tours, shark tooth hunting, Jupiter FL fossils">
+<meta name="keywords" content="Peace River fossils, megalodon teeth Peace River, Bone Valley Formation, Florida fossil permit, Ice Age fossils Florida, shark teeth identification">
 
-<!-- Open Graph / social sharing previews -->
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:site_name" content="Downstream Digs">
-<meta property="og:title" content="Downstream Digs — Guided Fossil Hunts in Florida">
-<meta property="og:description" content="Private guided fossil hunting trips on Florida's Peace River — real shark teeth, bone, and prehistoric relics.">
+<meta property="og:title" content="Fossils of the Peace River — What You'll Find">
+<meta property="og:description" content="A field guide to the fossils found in Florida's Peace River — megalodon and shark teeth, Ice Age megafauna, marine fossils, and the geology and permits behind them.">
 <!-- SWAP: once the site is live at your real domain, add these two lines back in:
-<meta property="og:url" content="https://yourdomain.com/">
+<meta property="og:url" content="https://yourdomain.com/fossils.html">
 <meta property="og:image" content="https://yourdomain.com/images/logo-lockup.png"> -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Downstream Digs — Guided Fossil Hunts in Florida">
-<meta name="twitter:description" content="Private guided fossil hunting trips on Florida's Peace River — real shark teeth, bone, and prehistoric relics.">
-
-<!-- Structured data so Google understands this as a local business/tour operator -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Downstream Digs",
-  "description": "Private guided fossil hunting trips on Florida's Peace River — real shark teeth, bone, and prehistoric relics from the Miocene and Pleistocene.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Jupiter",
-    "addressRegion": "FL",
-    "addressCountry": "US"
-  },
-  "areaServed": "Peace River, Florida",
-  "sameAs": ["https://instagram.com/Downstream_Digs"],
-  "priceRange": "$250",
-  "makesOffer": {
-    "@type": "Offer",
-    "name": "Peace River Private Fossil Hunt",
-    "description": "Private guided fossil hunt on the Peace River, 8-10 hours, up to 4 people.",
-    "priceCurrency": "USD",
-    "price": "250"
-  }
-}
-</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -222,19 +193,37 @@
 
   .reveal{opacity:0; transform:translateY(14px); transition:opacity .5s ease, transform .5s ease;}
   .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ============ ARTICLE PAGE ============ */
+  .container-narrow{max-width:760px; margin:0 auto; padding:0 24px;}
+  .page-header{padding:64px 0 8px;}
+  .page-header h1{margin-bottom:16px;}
+  .page-header .lede{max-width:62ch;}
+  .article{padding:40px 0 96px;}
+  .article h2{margin:52px 0 16px; font-size:clamp(1.35rem,2.6vw,1.8rem);}
+  .article h2:first-child{margin-top:0;}
+  .article p{color:#3C4A4E; margin-bottom:16px; max-width:70ch; line-height:1.65;}
+  .article h3{margin:28px 0 10px; font-size:1.05rem;}
+  .fact-note{border-left:3px solid var(--gold); background:var(--surface); padding:20px 24px; margin:36px 0; max-width:70ch;}
+  .fact-note p{margin-bottom:8px; font-size:0.95rem;}
+  .fact-note p:last-child{margin-bottom:0; color:var(--slate,#5C6F73); font-size:0.85rem;}
+  .article-photo{margin:36px 0; border:1px solid var(--line); overflow:hidden; max-width:560px;}
+  .article-photo img{width:100%; display:block;}
+  .article-cta{border-top:1px solid var(--line); margin-top:56px; padding-top:40px; text-align:left;}
+  .article-cta h2{margin-top:0; margin-bottom:12px;}
 </style>
 </head>
 <body>
 
 <header class="nav">
   <div class="container">
-    <a href="#top" class="logo"><img src="images/logo-lockup.png" alt="Downstream Digs"></a>
+    <a href="index.html" class="logo"><img src="images/logo-lockup.png" alt="Downstream Digs"></a>
     <nav class="nav-links" id="navLinks">
-      <a href="#tours">Tours</a>
-      <a href="#field-log">Field Log</a>
+      <a href="index.html#tours">Tours</a>
+      <a href="index.html#field-log">Field Log</a>
       <a href="fossils.html">Fossils</a>
-      <a href="#about">About</a>
-      <a href="#book" class="nav-cta">Book a Hunt</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#book" class="nav-cta">Book a Hunt</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -242,141 +231,54 @@
   </div>
 </header>
 
-<main id="top">
+<main>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-logo"><img src="images/hero-logo-mark.jpg" alt="Downstream Digs logo"></div>
-        <p class="eyebrow">Guided fossil hunts · Florida</p>
-        <h1>Millions of years, one afternoon in the river.</h1>
-        <p class="lede">Explore Florida's rivers and creeks for Miocene and Pleistocene fossils from the ancient past, guided by people who've logged the hours to know where to look.</p>
-        <div class="hero-ctas">
-          <a href="#book" class="btn btn-primary">Book a Hunt</a>
-          <a href="#field-log" class="btn btn-secondary">See Recent Finds</a>
-        </div>
-      </div>
-      <div class="hero-photo">
-        <img src="images/hero-canopy.jpg" alt="Kayaking a canopy-covered blackwater river in Florida">
-      </div>
+  <section class="page-header">
+    <div class="container-narrow">
+      <p class="eyebrow">Field Guide</p>
+      <h1>The Fossils of the Peace River</h1>
+      <p class="lede">Millions of years of Florida's coastline are packed into this riverbed. Here's what's actually down there, and how it got there.</p>
     </div>
   </section>
 
   <div class="divider" aria-hidden="true"><span></span><span></span><span></span></div>
 
-  <section class="about reveal" id="about">
-    <div class="container about-grid">
-      <div class="about-photo">
-        <img src="images/about-couple.jpg" alt="The Downstream Digs team on the riverbank">
-      </div>
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>Started in the river, not a classroom.</h2>
-        <div class="about-body">
-          <p>Downstream Digs started as two people spending every free weekend wrist-deep in Florida's rivers — and turned into guiding others through the same water. We're based out of Jupiter, FL, running private trips on the Peace River.</p>
-          <p>Every trip is hands-in-the-water. You'll learn where fossils collect, how to work a sifter without missing anything, and what you're actually holding once you find it.</p>
-        </div>
-        <div class="about-meta">
-          <span>BASED · Jupiter, FL</span>
-          <span>WATERS · Peace River</span>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section class="article">
+    <div class="container-narrow">
 
-  <div class="divider" aria-hidden="true"><span></span><span></span><span></span></div>
+      <h2>Fifty million years in a riverbed</h2>
+      <p>Florida spent most of its history underwater. As sea levels rose and fell over millions of years, layer after layer of marine sediment built up across the state &mdash; what geologists call the Hawthorn Group, and within it, the phosphate-rich Bone Valley Formation that the Peace River cuts straight through.</p>
+      <p>The Peace is a blackwater river &mdash; slow-moving, tannin-stained, full of decaying leaf matter. That slow current is part of what makes it such a good fossil site: it wears down the banks and riverbed gradually instead of scouring everything away, releasing fossils a little at a time. As those layers erode out of the banks and bed, fossils wash downstream and collect in gravel bars, bends, and slow water &mdash; exactly where we look.</p>
 
-  <section class="tours reveal" id="tours">
-    <div class="container">
-      <div class="season-notice">
-        <span class="eyebrow">Season Update</span>
-        <p>Guided trips start fall 2026. Rainy season is here and the Peace River is currently running too high to fossil hunt — we're watching levels closely and will update this page as soon as it's back in shape.</p>
+      <div class="article-photo">
+        <img src="images/find-pile.jpg" alt="A large pile of fossil shark teeth found in the Peace River">
       </div>
-      <div class="section-head">
-        <div><p class="eyebrow">The Trip</p><h2>Private Peace River hunts.</h2></div>
-        <p class="lede" style="margin:0;">Gear guidance, on-site coaching, and help identifying everything you find.</p>
-      </div>
-      <div class="trip-panel">
-        <div class="trip-panel-copy">
-          <h3>Peace River Private Hunt</h3>
-          <p>A private, guided hunt on the Peace River — wading and floating shallow gravel bars for shark teeth, Ice Age bone, and other Florida fossils. Just your group, no crowd, hands-on instruction the whole trip.</p>
-          <a href="#book" class="btn btn-primary">Book a Hunt</a>
-        </div>
-        <div class="trip-stats">
-          <div class="stat"><span class="stat-num">8–10</span><span class="stat-label">Hours</span></div>
-          <div class="stat"><span class="stat-num">4</span><span class="stat-label">People max</span></div>
-          <div class="stat"><span class="stat-num">$250</span><span class="stat-label">Per person</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <div class="divider" aria-hidden="true"><span></span><span></span><span></span></div>
+      <h2>From warm seas to the last Ice Age</h2>
+      <p>The fossils in the Peace River span an enormous stretch of time &mdash; roughly the Miocene Epoch, starting about 23 million years ago, through the end of the Pleistocene, around 11,700 years ago. During the Miocene, Florida sat under a warm, shallow sea thick with sharks, rays, and marine mammals, which is why shark teeth are by far the most common find. By the Pleistocene, sea levels had dropped and Florida looked more like an African savanna than a swamp &mdash; home to mammoths, giant sloths, and saber-toothed cats. Fossils from both eras end up mixed together in the same gravel bars today.</p>
 
-  <section class="field-log reveal" id="field-log">
-    <div class="container">
-      <div class="section-head"><div><p class="eyebrow">Field Log</p><h2>Recent finds.</h2></div></div>
-      <div class="field-grid">
-        <div class="specimen">
-          <div class="specimen-photo"><img src="images/find-sifter.jpg" alt="A screen full of fossil shark teeth from the Peace River"></div>
-          <div class="specimen-info"><span class="cat">DD · 001</span><h3>A full screen</h3><span class="loc">Peace River, FL</span></div>
-        </div>
-        <div class="specimen">
-          <div class="specimen-photo"><img src="images/find-hands.jpg" alt="Two hands full of fossil shark teeth"></div>
-          <div class="specimen-info"><span class="cat">DD · 002</span><h3>A good haul</h3><span class="loc">Peace River, FL</span></div>
-        </div>
-        <div class="specimen">
-          <div class="specimen-photo"><img src="images/find-hunting.jpg" alt="Tara and Charlie, the Downstream Digs team, in the Peace River"></div>
-          <div class="specimen-info"><span class="cat">DD · 003</span><h3>Tara and Charlie — The Downstream Digs team</h3><span class="loc">Peace River, FL</span></div>
-        </div>
-        <div class="specimen">
-          <div class="specimen-photo"><img src="images/find-tooth.jpg" alt="A fossil shark tooth held in hand"></div>
-          <div class="specimen-info"><span class="cat">DD · 004</span><h3>Clean hit</h3><span class="loc">Peace River, FL</span></div>
-        </div>
-        <div class="specimen">
-          <div class="specimen-photo"><img src="images/find-pile.jpg" alt="A large pile of fossil shark teeth"></div>
-          <div class="specimen-info"><span class="cat">DD · 005</span><h3>The pile</h3><span class="loc">Peace River, FL</span></div>
-        </div>
-        <div class="specimen">
-          <div class="specimen-photo"><img src="images/find-weekend.jpg" alt="A handful of fossil shark teeth from a weekend trip"></div>
-          <div class="specimen-info"><span class="cat">DD · 006</span><h3>Another good weekend</h3><span class="loc">Peace River, FL</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <h2>What you'll actually find</h2>
 
-  <div class="divider" aria-hidden="true"><span></span><span></span><span></span></div>
+      <h3>Shark teeth</h3>
+      <p>By far the most common fossil in the river, and the reason most people start hunting here in the first place. Megalodon is the one everyone's after, but you're far more likely to come home with a handful of smaller teeth &mdash; snaggletooth, sand tiger, mako, bull, lemon, and tiger shark, among others. Some of those species are still swimming today; others have been extinct for millions of years.</p>
 
-  <section class="book reveal" id="book">
-    <div class="container book-grid">
-      <div>
-        <p class="eyebrow">Book a hunt</p>
-        <h2>Plan your trip</h2>
-        <p class="lede">Tell us what you're after and we'll put together a trip that fits.</p>
-        <form id="bookForm" action="https://formsubmit.co/DownstreamDigs@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Fossil hunt inquiry — Downstream Digs">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-          <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required placeholder="Your name"></div>
-          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="you@email.com"></div>
-          <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="(555) 555-5555"></div>
-          <div class="field"><label for="partySize">Group size</label>
-            <select id="partySize" name="partySize">
-              <option>1 person</option>
-              <option>2 people</option>
-              <option>3 people</option>
-              <option>4 people</option>
-            </select>
-          </div>
-          <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Group size, dates, experience level..."></textarea></div>
-          <button type="submit" class="btn btn-primary">Send Inquiry</button>
-          <p id="form-status"></p>
-        </form>
+      <h3>Ice Age megafauna</h3>
+      <p>Less common, more exciting when it happens. Mastodon and mammoth teeth turn up regularly enough that most serious hunters have found at least one. Bone and teeth from giant ground sloths, dire wolves, glyptodonts (imagine an armadillo the size of a small car), ancient horses, bison, and tapir are all out there too &mdash; remnants of the Ice Age animals that once grazed what's now the riverbed.</p>
+
+      <h3>Marine life</h3>
+      <p>Alongside the sharks, the river holds fossils from dugongs (an ancient relative of the manatee), whales, dolphins, sea turtles, and stingray plates, plus shells and other invertebrates from when this whole stretch of Florida was seafloor.</p>
+
+      <div class="fact-note">
+        <p><strong>The one permit you might need.</strong> Shark teeth don't require a permit &mdash; collect as many as you find. Anything else vertebrate (bone, mastodon and mammoth teeth, and similar) legally requires a Florida Fossil Permit, issued by the Florida Museum of Natural History for $5 a year. It's inexpensive but not instant &mdash; processing can take a couple of weeks, so it's worth applying before your trip rather than the morning of. We're happy to point you to the application when you book.</p>
+        <p>Rules can change &mdash; always check current requirements before you go.</p>
       </div>
-      <div>
-        <div class="book-alt">Prefer social? DM <a href="https://instagram.com/Downstream_Digs" target="_blank" rel="noopener">@Downstream_Digs</a> on Instagram.</div>
-        <div class="book-alt">Or email <a href="mailto:DownstreamDigs@gmail.com">DownstreamDigs@gmail.com</a> directly.</div>
+
+      <div class="article-cta">
+        <h2>Ready to see it for yourself?</h2>
+        <p>Every trip includes help telling a real fossil from a rock, on the spot.</p>
+        <a href="index.html#book" class="btn btn-primary">Book a Hunt</a>
       </div>
+
     </div>
   </section>
 
@@ -390,7 +292,7 @@
       <a href="https://facebook.com/downstreamdigs" target="_blank" rel="noopener">Facebook</a>
     </div>
     <div class="foot-fine">
-      <span>© 2026 Downstream Digs · Jupiter, FL</span>
+      <span>&copy; 2026 Downstream Digs &middot; Jupiter, FL</span>
       <span>Built in the field, hosted for free.</span>
     </div>
   </div>
@@ -405,33 +307,6 @@
   });
   navLinks.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click', function(){ navLinks.classList.remove('open'); });
-  });
-
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!reduceMotion && 'IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ if (e.isIntersecting) e.target.classList.add('in'); });
-    }, {threshold:0.12});
-    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-  } else {
-    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
-  }
-
-  var form = document.getElementById('bookForm');
-  var status = document.getElementById('form-status');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    status.textContent = 'Sending…';
-    var data = new FormData(form);
-    fetch('https://formsubmit.co/ajax/DownstreamDigs@gmail.com', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: data
-    }).catch(function(){ /* the request still reaches the server even if the browser can't read the response */ });
-    setTimeout(function(){
-      status.textContent = "Thanks — we'll be in touch soon.";
-      form.reset();
-    }, 600);
   });
 </script>
 
