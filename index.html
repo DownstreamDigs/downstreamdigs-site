@@ -308,7 +308,10 @@
         <p class="eyebrow">Book a hunt</p>
         <h2>Plan your trip</h2>
         <p class="lede">Tell us what you're after and we'll put together a trip that fits.</p>
-        <form id="bookForm">
+        <form id="bookForm" action="https://formsubmit.co/DownstreamDigs@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Fossil hunt inquiry — Downstream Digs">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required placeholder="Your name"></div>
           <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="you@email.com"></div>
           <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="(555) 555-5555"></div>
@@ -369,27 +372,25 @@
     document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
   }
 
-  var FORM_ENDPOINT = "https://formspree.io/f/yourFormID"; // replace after creating a free form at formspree.io
   var form = document.getElementById('bookForm');
   var status = document.getElementById('form-status');
   form.addEventListener('submit', function(e){
-    if (FORM_ENDPOINT.indexOf('yourFormID') !== -1){
-      e.preventDefault();
-      var data = new FormData(form);
-      var subject = encodeURIComponent('Fossil hunt inquiry from ' + data.get('name'));
-      var body = encodeURIComponent(
-        'Name: ' + data.get('name') + '\n' +
-        'Email: ' + data.get('email') + '\n' +
-        'Phone: ' + data.get('phone') + '\n' +
-        'Group size: ' + data.get('partySize') + '\n\n' +
-        data.get('message')
-      );
-      window.location.href = 'mailto:DownstreamDigs@gmail.com?subject=' + subject + '&body=' + body;
-      status.textContent = 'Opening your email app to send this…';
-    } else {
-      form.setAttribute('action', FORM_ENDPOINT);
-      form.setAttribute('method', 'POST');
-    }
+    e.preventDefault();
+    status.textContent = 'Sending…';
+    var data = new FormData(form);
+    fetch('https://formsubmit.co/ajax/DownstreamDigs@gmail.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: data
+    })
+    .then(function(res){ return res.json(); })
+    .then(function(){
+      status.textContent = "Thanks — we'll be in touch soon.";
+      form.reset();
+    })
+    .catch(function(){
+      status.textContent = 'Something went wrong — email DownstreamDigs@gmail.com directly instead.';
+    });
   });
 </script>
 
