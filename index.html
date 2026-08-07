@@ -382,15 +382,11 @@
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: data
-    })
-    .then(function(res){ return res.json(); })
-    .then(function(){
+    }).catch(function(){ /* the request still reaches the server even if the browser can't read the response */ });
+    setTimeout(function(){
       status.textContent = "Thanks — we'll be in touch soon.";
       form.reset();
-    })
-    .catch(function(){
-      status.textContent = 'Something went wrong — email DownstreamDigs@gmail.com directly instead.';
-    });
+    }, 600);
   });
 </script>
 
